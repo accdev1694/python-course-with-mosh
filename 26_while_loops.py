@@ -15,7 +15,7 @@ while number > 0:
 
 command = ""
 
-while True:       
+while command != "quit":       
     command = input(">>> ")
     if command.lower() == "quit":
         break
@@ -36,6 +36,13 @@ while True:
         print(num1 ** num2)
     elif command == "%":
         print(num1 % num2)
+        
+# infinite loops gives a condition as follows:
+# while True:
+    # code here
+    
+# in which case we won need to initialize command to an empty string
+# and you must break at the end since they run forever
     
     
 
